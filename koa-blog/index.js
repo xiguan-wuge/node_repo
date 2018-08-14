@@ -45,6 +45,8 @@ app.use(bodyParser({
 })) 
 app.use(require('./routes/posts.js').routes());
 app.use(require('./routes/signup.js').routes());
+app.use(require('./routes/signin.js').routes());
+app.use(require('./routes/signout.js').routes());
 
 app.listen(config.port);
 console.log(`listen on port  ${config.port}`);
